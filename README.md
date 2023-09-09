@@ -47,7 +47,8 @@ const server = makeServer({
       console.log(`${ws.data} said: ${message}`);
     },
     // . . . (open, close, ping, pong, etc.)
-  }
+  },
+  // Also see websocketHandler to set custom `ws.data`.
 });
 
 console.log(`Listening on localhost:${server.port}`);
